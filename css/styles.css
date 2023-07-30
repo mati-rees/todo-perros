@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Roboto:wght@100;300;400;700&display=swap');
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===== HEADER ====*/
+
+header {
+    background-color: #FFF9DE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 28px;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 2.1rem;
+    padding-right: 1.875rem;
+    
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.475rem;
+}
+
+/* ==== BANNER PRINCIPAL ======*/
+
+.fondo-main{
+background-image: url(../assets/img/imagen-patasheader-index.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 700px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 1.25rem;
+}
+
+.contenedor-titulo-principal {
+    padding: 55px;
+}
+
+.fondo-main h1{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.125rem;
+    width: 100%;
+    margin-top: 3.75rem;
+}
+.fondo-main p{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2.8125rem;
+    width: 55%;
+    margin-top: 3.75rem;
+    line-height: 3.125rem;
+}
+
+/* ==== NUESTROS SERVICIOS ======*/
+
+.seccion-index-tamaño {
+    width: 100%;
+    height: 600px;
+    padding: 20px 20px 60px 20px;
+}
+
+.titulo-main{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.1875rem;
+}
+
+.seccion-index-tamaño {
+    width: 100%;
+    height: 600px;
+    padding: 20px 20px 60px 20px;
+}
+
+.seccion-index{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    margin-top: 2.5rem;
+}
+
+.contenedor-index {
+    text-align: center;
+    padding: 20px 40px;
+}
+.contenedor-index a {
+    text-decoration: none;
+    color: black;
+}
+.contenedor-index h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+.seccion-index p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* ==== ADOPTAME ======*/
+
+.fondo-adoptame-index{
+    background-image: url(../assets/img/fondo-adoptame.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.titulo-adoptame {
+    position: absolute;
+    right: 8%;
+    top: 300px;
+    width: 26%;
+}
+
+
+.titulo-adoptame h2 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 3.125rem;
+    margin-bottom: 22px;
+}
+
+.titulo-adoptame p{
+    font-size: 30px;
+    text-align: initial;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ==== SECCION QUIENES SOMOS / BANNER PRINCIPAL ======*/
+
+.fondo-quienes-somos {
+    background-image: url(../assets/img/quienes-somos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.contenedor-parrafo-quienes-somos {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-parrafo-quienes-somos p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.6875rem;
+    width: 90%;
+    text-align: center;
+}
+
+/* ==== SECCION QUIENES SOMOS / QUIENES SOMOS ======*/
+
+.contenedor-quienes-somos {
+    display: flex;
+    justify-content: center!important;
+    padding: 80px 0px;
+}
+
+.contenedor-elementos-qs {
+    text-align: center;
+    flex: 0 0 33%;
+    padding: 0 30px;
+}
+
+.contenedor-elementos-qs h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1875rem;
+    margin-top: 1.25rem;
+    margin-bottom: 14px;
+}
+
+.contenedor-elementos-qs p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+/* ==== FOOTER ======*/
+
+footer {
+    background-color: #FFF9DE;
+    height: auto;
+    padding-top: 33px;
+}
+.logo-footer{
+    position: relative;
+    top: 4.375rem;
+}
+
+.logo{
+    width: 7.5rem;
+}
+
+.fb-ig{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 3.125rem;
+    right: 11.875rem;
+    gap: .5rem;
+}
+
+.fb-ig a img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.contenedor-texto-footer {
+    justify-content: end;
+    display: flex;
+}
+
+.texto-footer {
+    display: flex;
+    justify-content: end;
+    gap: 1.875rem;
+    list-style: none;
+    align-self: center;
+    position: relative;
+    right: 1.875rem;
+    bottom: 4.375rem;
+}
+
+.texto-footer li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.contactanos {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 3.125rem;
+    right: 1.5rem;
+}
+
+.contactanos button {
+    padding: 6px 12px;
+}
+
+.contactanos button a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375rem;
+}
+
+.info-footer {
+    display: flex;
+    gap: 0.9375rem;
+    justify-content: center;
+    position: relative;
+    bottom: 1.25rem;
+}
+.info-footer li {
+    font-family: 'Poppins', sans-serif;
+    font-size: .75rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* ==== FOOTER 2 ======*/
+
+
+.footer_2 {
+    background-color: #FFF9DE;
+    height: auto;
+    display: flex;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.contenerdor_footer_1{
+	flex: 0 0 20%;
+}
+.contenerdor_footer_2{
+	flex: 0 0 80%;
+}
+.contenerdor_footer_3 {
+    flex: 0 0 100%;
+}
+
+.logo-footer_2 {
+    position: initial;
+}
+
+.contactanos_2 button {
+    padding: 6px 12px;
+}
+
+.contactanos_2 button a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.fb-ig_2 {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.fb-ig_2 a img {
+    width: 2.5rem;
+}
+
+.info-footer_2 {
+    display: flex;
+    gap: 0.9375rem;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.info-footer_2 li {
+    font-family: 'Poppins', sans-serif;
+    font-size: .75rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.texto-footer_2 {
+    display: flex;
+    justify-content: end;
+    gap: 1.875rem;
+    list-style: none;
+}
+
+.texto-footer_2 li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.contactanos_2 {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+    
