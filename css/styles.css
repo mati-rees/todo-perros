@@ -633,7 +633,6 @@ footer{
         background-size: cover;
         background-position: top;
         height: 18.75rem;
-        background-;
     }
     .titulo-adoptame{
         display: flex;
@@ -648,10 +647,30 @@ footer{
         font-size: 1.875rem;
     }
     .titulo-adoptame p{
-        font-size: .9375rem;
-        
+        font-size: .9375rem;  
     }
-    
-
-    
+    /**FOOTER**/
+    .logo-footer_2 img{     
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+    .texto-footer_2{
+        gap: .75rem; 
+    }
+    .texto-footer_2 li a{
+        font-size: .9375rem;
+    }
+    .contactanos_2 button a{
+        font-size: .75rem;
+    }
+    .fb-ig_2 a img{
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+    .info-footer_2{
+        padding: 0;
+    }
+    .info-footer_2 li{ 
+        font-size: .625rem;
+    }
 }
