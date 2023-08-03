@@ -577,3 +577,81 @@ footer{
     justify-content: end;
     margin-top: 20px;
 }
+
+@media (max-width: 480px){
+    /**NAVBAR**/
+    header img{
+        height: 3.75rem;
+    }
+    .navbar{
+        display: flex;
+        gap: .625rem;
+        padding-right: .875rem;
+        
+    }
+    .navbar li a{
+        font-size: .75rem;
+    }
+    /**INDEX**/
+    .fondo-main{
+        background-size: contain;
+        background-position: top;
+        height: auto;   
+    }
+    .fondo-adoptame-index{
+        background-size: contain;
+        background-position: center;
+    }
+    .contenedor-titulo-principal{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: -3.75rem;
+    }
+    .fondo-main div h1{
+        font-size: 1.875rem;   
+    }
+    .fondo-main div p{
+        font-size: 1.25rem;
+        line-height: normal;
+        width: 100%;
+
+    }
+    .titulo-main{
+        font-size: 1.875rem;
+    }
+    .seccion-index-tamaño{
+        height: 95.25rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .seccion-index{
+        display: flex;
+        flex-direction: column;
+    }
+    .fondo-adoptame-index{
+        background-size: cover;
+        background-position: top;
+        height: 18.75rem;
+        background-;
+    }
+    .titulo-adoptame{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-top: -15rem;
+        margin-right: -2.1875rem;
+        width: 11.5625rem;
+        
+    }
+    .titulo-adoptame h2{
+        font-size: 1.875rem;
+    }
+    .titulo-adoptame p{
+        font-size: .9375rem;
+        
+    }
+    
+
+    
+}
