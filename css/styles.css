@@ -703,7 +703,22 @@ footer{
     .contenedor-veterinaria div a img{
         height: 11.875rem;
     }
- 
+
+    /**QUIENES SOMOS**/
+
+    .fondo-quienes-somos{
+        background-size: contain;
+        background-position: top;
+        height: 18.575rem;
+    }
+    .contenedor-parrafo-quienes-somos p{
+        font-size: 1.25rem;
+    }
+    .contenedor-quienes-somos{
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+    }
     }
     
     
