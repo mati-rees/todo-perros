@@ -579,7 +579,9 @@ footer{
 }
 
 @media (max-width: 480px){
+    
     /**NAVBAR**/
+
     header img{
         height: 3.75rem;
     }
@@ -615,7 +617,6 @@ footer{
         font-size: 1.25rem;
         line-height: normal;
         width: 100%;
-
     }
     .titulo-main{
         font-size: 1.875rem;
@@ -673,4 +674,36 @@ footer{
     .info-footer_2 li{ 
         font-size: .625rem;
     }
-}
+
+    /**VETERINARIO**/
+    .fondo-index{
+        background-size: contain;
+        background-position: top;
+        height: auto;   
+    }
+    .textos-main h1{
+        font-size: 1.875rem;
+    
+    }
+    .textos-main p{
+        font-size: 1.25rem;
+        line-height: normal;
+        width: 100%;
+    }
+    .titulo-main{
+        font-size: 1.5rem;
+    }
+    .seccion-index-tamaño-vet{
+        height: auto;
+    }
+    .contenedor-veterinaria{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-veterinaria div a img{
+        height: 11.875rem;
+    }
+ 
+    }
+    
+    
