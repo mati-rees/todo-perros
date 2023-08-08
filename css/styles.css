@@ -675,9 +675,32 @@ footer{
     .info-footer_2 li{ 
         font-size: .625rem;
     }
+
+    /**QUIENES SOMOS**/
+    .fondo-quienes-somos{
+        background-size: cover;
+        background-position: center;
+        height: 28.125rem;
+    }
+    .contenedor-parrafo-quienes-somos p{
+        font-size: 2.5rem;
+    }
+    .contenedor-quienes-somos{
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+    }   
+
+}
+@media (max-width: 425px)
+{
+
+
+
 }
 @media (max-width: 480px)
 { 
+
     /**NAVBAR**/
     .navbar{
         display: flex;
