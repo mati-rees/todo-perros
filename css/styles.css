@@ -688,11 +688,14 @@ footer{
     .navbar li a{
         font-size: .75rem;
     }
+    .logo-mobile{
+        height: 3.75rem;
+    }
     /**INDEX**/
     .fondo-main{
-        background-size: contain;
+        background-size: cover;
         background-position: top;
-        height: auto;   
+        height: 21.875rem;   
     }
     .fondo-adoptame-index{
         background-size: contain;
@@ -702,21 +705,22 @@ footer{
         text-align: center;
         display: flex;
         flex-direction: column;
-        margin-top: -3.75rem;
+        margin-top: -0.625rem;
+        margin-left: -0.625rem;
     }
     .fondo-main div h1{
-        font-size: 1.875rem;   
+        font-size: 1.25rem;   
     }
     .fondo-main div p{
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         line-height: normal;
-        width: 100%;
+        width: 60%;
     }
     .titulo-main{
         font-size: 1.875rem;
     }
     .seccion-index-tamaño{
-        height: 95.25rem;
+        height: 96.875rem;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -771,6 +775,9 @@ footer{
     }
 
     /**VETERINARIO**/
+    .logo-mobile{
+        height: 3.75rem;
+    }
     .fondo-index{
         background-size: contain;
         background-position: top;
@@ -800,7 +807,9 @@ footer{
     }
 
     /**QUIENES SOMOS**/
-
+    .logo-mobile{
+        height: 3.75rem; 
+    }
     .fondo-quienes-somos{
         background-size: contain;
         background-position: top;
