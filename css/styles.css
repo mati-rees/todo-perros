@@ -578,18 +578,112 @@ footer{
     margin-top: 20px;
 }
 
-@media (max-width: 480px){
-    
+@media (max-width: 768px)
+{
     /**NAVBAR**/
-
-    header img{
-        height: 3.75rem;
+    
+    .navbar{
+        gap: .625rem;
+        margin-bottom: 0;
     }
+    .navbar li a{
+        font-size: 1.1875rem;
+    }
+
+    /**INDEX**/
+    .fondo-main{
+        background-size: cover;
+        background-position: top;
+        height: 28.125rem;
+    }   
+    .contenedor-titulo-principal{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2.6875rem;
+    }
+    .fondo-main div h1{
+        font-size: 2.25rem;   
+        width: 50%;
+        text-align: start;
+        margin-top: 1.125rem;
+    }
+    .fondo-main div p{
+        font-size: 1.25rem;
+        text-align: start;
+        line-height: 1.5;
+        margin-top: .5rem;  
+    }
+    .titulo-main{
+        font-size: 1.875rem
+    }
+    .seccion-index-tamaño{
+        height: auto;
+    }
+    .seccion-index{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .fondo-adoptame-index{
+        background-size: cover;
+        background-position: center;
+        height: 31.25rem;
+    }
+    .titulo-adoptame{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-top: -8.75rem;
+        margin-right: -3.25rem;
+        width: 39%;
+            
+    }
+    .titulo-adoptame h2{
+        font-size: 2.5rem;
+        }
+    .titulo-adoptame p{
+        font-size: 1.25rem;  
+    }    
+    footer{
+        padding-top: 0;
+    }
+    .footer_2{
+        padding-top: 1.875rem;
+    }
+    .logo-footer_2 img{     
+        height: 5.625rem;
+        width: 5.625rem;
+    }
+    .texto-footer_2{
+        gap: .75rem; 
+    }
+    .texto-footer_2 li a{
+        font-size: .9375rem;
+    }
+    .contactanos_2 button a{
+        font-size: .75rem;
+    }
+    .fb-ig_2 a img{
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+    .info-footer_2{
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .info-footer_2 li{ 
+        font-size: .625rem;
+    }
+}
+@media (max-width: 480px)
+{ 
+    /**NAVBAR**/
     .navbar{
         display: flex;
         gap: .625rem;
         padding-right: .875rem;
-        
+        margin-bottom: 0;
     }
     .navbar li a{
         font-size: .75rem;
@@ -670,6 +764,7 @@ footer{
     }
     .info-footer_2{
         padding: 0;
+        margin-bottom: 0;
     }
     .info-footer_2 li{ 
         font-size: .625rem;
@@ -718,11 +813,5 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 3.125rem;
-    }
-
-    /**FORMULARIO**/
-
-    
-    }
-    
-    
+    }   
+}
