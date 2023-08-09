@@ -7,8 +7,29 @@ font-family: 'Roboto', sans-serif;*/
     box-sizing: border-box;
 }
 
-/*===== HEADER ====*/
+/**NAVBAR**/
 
+.color-fondo-nav{
+    background-color: #FFF9DE;
+}
+.contenedor-nav{
+    align-items: end;
+}
+.dropdown-menu{
+    background-color:#FFF9DE;
+}
+.navbar-nav li a{
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;;
+}
+.dropdown-menu li a{
+    font-family: 'Roboto', sans-serif;;
+}
+
+
+/*===== HEADER ====*/
+/**
 header {
     background-color: #FFF9DE;
     display: flex;
@@ -31,9 +52,11 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 1.475rem;
 }
-
+**/
 /* ==== BANNER PRINCIPAL ======*/
-
+.logo-navbar{
+    height: 5rem;
+}
 .fondo-main{
 background-image: url(../assets/img/imagen-patasheader-index.jpg);
 background-repeat: no-repeat;
@@ -306,38 +329,8 @@ gap: 1.25rem;
     flex-direction: column;
     align-items: center;
 }
-.formulario{
-    background-color: white;
-    height: auto;
-    padding: 1.25rem;
-    padding-left: 20rem;
-}
-.titulo-form{
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    display: flex;
-    width: 100%;
-    justify-content: left;
-    
-}
-.formulario fieldset{
-    border: none;
-    display: flex;
-    flex-direction: column; 
-}
-.formulario fieldset label{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    gap: .625rem;
-    
-}
-.formulario fieldset label input{
-    font-size: 2.5rem;
-    height: 3.125rem;
-    background-color: azure;
+.color-fondo{
+    background-color: #fff9de90;
 }
 
 /**BUSCA TU PASEADOR**/
@@ -550,6 +543,7 @@ footer{
     justify-content: center;
     position: relative;
     padding: 20px 0;
+    margin-bottom: 0;
 }
 
 .info-footer_2 li {
@@ -578,6 +572,36 @@ footer{
     margin-top: 20px;
 }
 
+
+@media (max-width: 1024px)
+{
+
+    .contenedor-titulo-principal{
+        padding: 0;
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0.343);
+      
+        
+    }
+    .fondo-main div h1{
+        display: block;
+        
+    }
+    .fondo-main div p{
+        width: 100%;
+        padding-bottom: 1.875rem;
+        
+    }
+    .seccion-index-tamaño{
+        height: auto;
+    }
+    .seccion-index{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
 @media (max-width: 768px)
 {
     /**NAVBAR**/
@@ -600,17 +624,17 @@ footer{
         text-align: center;
         display: flex;
         flex-direction: column;
-        padding-left: 2.6875rem;
+        padding: 0px 2.5rem;
     }
     .fondo-main div h1{
         font-size: 2.25rem;   
-        width: 50%;
-        text-align: start;
+        width: 100%;
+        text-align: center;
         margin-top: 1.125rem;
     }
     .fondo-main div p{
         font-size: 1.25rem;
-        text-align: start;
+        text-align: center;
         line-height: 1.5;
         margin-top: .5rem;  
     }
@@ -692,8 +716,6 @@ footer{
     }   
 
 }
-
-
 @media (max-width: 425px)
 { 
 
