@@ -692,13 +692,9 @@ footer{
     }   
 
 }
+
+
 @media (max-width: 425px)
-{
-
-
-
-}
-@media (max-width: 480px)
 { 
 
     /**NAVBAR**/
@@ -718,26 +714,29 @@ footer{
     .fondo-main{
         background-size: cover;
         background-position: top;
-        height: 21.875rem;   
+        height: 21.875rem;
+ 
     }
     .fondo-adoptame-index{
         background-size: contain;
         background-position: center;
     }
     .contenedor-titulo-principal{
-        text-align: center;
         display: flex;
         flex-direction: column;
-        margin-top: -0.625rem;
-        margin-left: -0.625rem;
+        align-content: center;
+        margin-top: 2.75rem;
+        margin-left: -0.5rem;
+        
     }
     .fondo-main div h1{
-        font-size: 1.25rem;   
+        font-size: 1.25rem;
+        width: 60%;  
     }
     .fondo-main div p{
-        font-size: 1.125rem;
+        font-size: 1rem;
         line-height: normal;
-        width: 60%;
+        width: 55%;
     }
     .titulo-main{
         font-size: 1.875rem;
@@ -760,8 +759,8 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: end;
-        margin-top: -15rem;
-        margin-right: -2.1875rem;
+        margin-top: -14rem;
+        margin-right: -42px;
         width: 11.5625rem;
         
     }
