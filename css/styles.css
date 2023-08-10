@@ -175,6 +175,7 @@ gap: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(128, 128, 128, 0.343);
 }
 
 .contenedor-parrafo-quienes-somos p {
@@ -827,8 +828,8 @@ footer{
         height: 17.5rem;
     }
     .contenedor-parrafo-quienes-somos p{
-        font-size: .875rem;
-        margin-bottom: 6.25rem;
+        font-size: 1.25rem;
+        margin-bottom: 1.375rem;
     }
     .contenedor-quienes-somos{
         display: flex;
@@ -871,7 +872,7 @@ footer{
     height: auto;
 }
 .texto-footer-2 li a{
-    font-size: .625rem;
+    font-size: .5rem;
 }
 .info-footer-2 li{
     font-size: .5rem;
