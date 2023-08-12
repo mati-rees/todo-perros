@@ -360,9 +360,7 @@ gap: 1.25rem;
     width: 70%;
 }
 .fondo-buscatp div{
-    color: white;
-    background-color: rgb(128, 128, 128, 0.343);
-    
+    color: black;
 }
 
 /**BAÑO Y PELUQUERIA**/
@@ -565,13 +563,15 @@ footer{
 
 @media (max-width: 1024px)
 {
+    /*INDEX*/
 
     .contenedor-titulo-principal{
         padding: 0;
         text-align: center;
         background-color: rgba(128, 128, 128, 0.343);
+      
+        
     }
-    
     .fondo-main div h1{
         display: block;
         
@@ -590,27 +590,11 @@ footer{
         grid-template-rows: 1fr 1fr;
         
     }
-
     /*BUSCA TU PASEADOR*/
-    .contenedor-buscatp{
-        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
 
-    }
     .textos-main{
-        width: 100%;
-        
+        background-color: rgba(128, 128, 128, 0.343);
     }
-
-    /*VETERINARIO*/
-    .seccion-index-tamaño-vet{
-        height: auto;
-    }
-
-    .contenedor-veterinaria{
-        flex-direction: column;
-    }
-
-    
 }
 @media (max-width: 768px)
 {
@@ -915,4 +899,3 @@ footer{
 
 
 }
-
