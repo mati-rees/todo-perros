@@ -217,7 +217,7 @@ gap: 1.25rem;
 /**VETERINARIO**/
 
 
-.fondo-index{
+.fondo-vet{
     background-image: url(../assets/img/fondo-veterinario.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -629,6 +629,7 @@ footer{
         background-size: cover;
         background-position: top;
         height: 28.125rem;
+        
     }   
     .contenedor-titulo-principal{
         text-align: center;
@@ -660,27 +661,7 @@ footer{
         grid-template-rows: 1fr 1fr;
         gap: 20px;
     }
-    .fondo-adoptame-index{
-        background-size: cover;
-        background-position: center;
-        height: 31.25rem;
-    }
 
-    .titulo-adoptame{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        margin-top: -8.75rem;
-        margin-right: -3.25rem;
-        width: 39%;
-            
-    }
-    .titulo-adoptame h2{
-        font-size: 2.5rem;
-        }
-    .titulo-adoptame p{
-        font-size: 1.25rem;  
-    }    
     footer{
         padding-top: 0;
     }
@@ -721,8 +702,8 @@ footer{
     /**QUIENES SOMOS**/
     .fondo-quienes-somos{
         background-size: cover;
-        background-position: center;
-        height: 31.25rem;
+        background-position: top;
+        height: 28.125rem;
         
     }
     .contenedor-parrafo-quienes-somos p{
@@ -733,7 +714,112 @@ footer{
         flex-direction: column;
         gap: 3.125rem;
     }   
-}
+
+    /*VETERINARIO*/
+    .fondo-vet{
+        background-size: cover;
+        background-position: top;
+        height: 28.125rem;
+        color: white;
+    }
+    .textos-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 2.5rem;
+        background-color: rgba(128, 128, 128, 0.343);
+        
+    }
+    .fondo-vet h1{
+        font-size: 2.25rem;   
+        width: 100%;
+        text-align: center;
+        margin-top: 1.125rem;;
+    }
+    .fondo-vet p{
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: .5rem;
+        width: 100%;
+    }
+    /*BUSCA TU PASEADOR*/
+
+    .fondo-buscatp{
+        background-size: cover;
+        background-position: top;
+        height: 28.125rem;
+    }
+    .textos-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 2.5rem;
+    }
+    .fondo-buscatp h1{
+        font-size: 2.25rem;   
+        text-align: center;
+        margin-top: 1.125rem;
+    }
+    .fondo-buscatp p{
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: .5rem;
+        width: 100%;
+    }
+    /*BAÑO Y PELUQUERIA*/
+
+    .fondo-baño-y-pelu{
+        background-size: cover;
+        background-position: top;
+        height: 28.125rem;
+    }
+    .textos-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 2.5rem;
+    }
+    .fondo-baño-y-pelu h1{
+        font-size: 2.25rem;   
+        width: 100%;
+        text-align: center;
+        margin-top: 1.125rem;
+    }
+    .fondo-baño-y-pelu p{
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: .5rem;
+        width:100%;
+    }
+    .fondo-adoptame{
+        background-size: cover;
+        background-position: top;
+        height: 28.125rem;
+    }
+    .textos-main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 2.5rem;
+    }
+    .fondo-adoptame h1{
+        font-size: 2.25rem;   
+        width: 100%;
+        text-align: center;
+        margin-top: 1.125rem;
+    }
+    .fondo-adoptame p{
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: .5rem;
+	    width:100%;
+    }
+    
+    }
 @media (max-width: 425px)
 { 
 
@@ -819,6 +905,9 @@ footer{
         background-size: contain;
         background-position: top;
         height: auto;   
+    }
+    .textos-main{
+        text-align: center;
     }
     .textos-main h1{
         font-size: 1.875rem;
