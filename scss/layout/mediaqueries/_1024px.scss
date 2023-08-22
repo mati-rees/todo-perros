@@ -1,0 +1,32 @@
+@media (max-width: 1024px){
+
+.contenedor-principal{
+    padding: 0;
+        text-align: center;
+        background-color: $color-de-fondo-texto-main;
+}
+.fondo.main{
+    div{
+        h1{
+            display: block;
+        }
+        p{
+            width: 100%;
+            padding-bottom: 1.875rem;    
+        }
+    }
+}
+.seccion-index-tamaño{
+    height: auto;
+}
+.seccion-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;  
+}
+.contenedor-texto-footer{
+    ul{
+        margin-right: 1.25rem;
+    }
+}
+}

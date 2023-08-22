@@ -1,0 +1,44 @@
+.fondo-vet{
+    background-image: url(../assets/img/fondo-veterinario.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.75rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.textos-main{
+    color: $color-font-white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 3.4375rem;
+    background-color: $color-de-fondo-texto-main;
+    h1{
+        font-family: $tipografia-roboto;
+        font-size: 3.125rem;
+        width: 100%;
+        margin-top: 3.75rem;    
+    }
+    p{
+        font-family: $tipografia-poppins;
+        font-weight: 300;
+        font-size: 2.8125rem;
+        width: 60%;
+        margin-top: 1.25rem;
+        line-height: 3.125rem;
+    }
+}
+.seccion-index-tamaño-vet{
+    width: 100%;
+    height: 25rem;
+}
+.contenedor-veterinaria{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.875rem; 
+}

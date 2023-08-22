@@ -1,0 +1,26 @@
+.color-fondo-nav{
+    background-color: $color-sitio-web;
+}
+.contenedor-nav{
+    align-items: end;
+}
+.dropdown-menu{
+    background-color: $color-sitio-web;
+    li{
+        a{
+            font-family: $tipografia-roboto;
+        }
+    }
+}
+.navbar-nav{
+    li{
+        a{
+            font-weight: 500;
+            font-size: 1.25rem;
+            font-family: $tipografia-roboto;
+        }
+    }
+}
+.logo-navbar{
+    height: 5rem;
+}

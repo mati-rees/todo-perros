@@ -1,1061 +1,680 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Roboto:wght@100;300;400;700&display=swap');
-/*font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+/*primero variables mixing y funciones*/
+/*todo lo correspondiente al código*/
+/*media queries*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/**NAVBAR**/
+.color-fondo-nav {
+  background-color: #FFF9DE; }
 
-.color-fondo-nav{
-    background-color: #FFF9DE;
-}
-.contenedor-nav{
-    align-items: end;
-}
-.dropdown-menu{
-    background-color:#FFF9DE;
-}
-.navbar-nav li a{
-    font-weight: 500;
-    font-size: 1.25rem;
-    font-family: 'Roboto', sans-serif;;
-}
-.dropdown-menu li a{
-    font-family: 'Roboto', sans-serif;;
-}
-.logo-navbar{
-    height: 5rem;
-}
+.contenedor-nav {
+  align-items: end; }
 
-/*===== HEADER ====*/
-/**
-header {
-    background-color: #FFF9DE;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 28px;
-}
+.dropdown-menu {
+  background-color: #FFF9DE; }
+  .dropdown-menu li a {
+    font-family: "Roboto", sans-serif; }
 
-.navbar{
-    display: flex;
-    list-style: none;
-    gap: 2.1rem;
-    padding-right: 1.875rem;
-    
-}
+.navbar-nav li a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif; }
 
-.navbar li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.475rem;
-}
-**/
-/* ==== BANNER PRINCIPAL ======*/
+.logo-navbar {
+  height: 5rem; }
 
-.fondo-main{
-background-image: url(../assets/img/imagen-patasheader-index.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-width: 100%;
-height: 700px;
-display: flex;
-justify-content: center;
-flex-direction: column;
-gap: 1.25rem;
-}
+.fondo-main {
+  background-image: url(../assets/img/imagen-patasheader-index.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem; }
 
-.contenedor-titulo-principal{
-    padding: 55px;
-    background-color: rgba(128, 128, 128, 0.343);
-}
-
-.fondo-main div h1{
-    display: flex;
+.fondo-main div {
+  padding: 3.4375rem;
+  background-color: rgba(128, 128, 128, 0.343); }
+  .fondo-main div h1 {
     align-items: center;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 3.125rem;
     width: 100%;
-    margin-top: 3.75rem;
-}
-.fondo-main div p{
-    display: flex;
+    margin-top: 3.75rem; }
+  .fondo-main div p {
     align-items: center;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 2.8125rem;
     width: 55%;
     margin-top: 3.75rem;
-    line-height: 3.125rem;
-}
-
-/* ==== NUESTROS SERVICIOS ======*/
+    line-height: 3.125rem; }
 
 .seccion-index-tamaño {
-    width: 100%;
-    height: 700px;
-    padding: 20px 20px 60px 20px;
-}
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 60px 20px; }
 
-.titulo-main{
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-size: 37px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2.1875rem;
-}
+.titulo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.1875rem;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 2.3125rem; }
 
-.seccion-index-tamaño{
-    width: 100%;
-    height: 600px;
-    padding: 20px 20px 60px 20px;
-}
-.seccion-index{
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr;
-    margin-top: 2.5rem; 
-}
-.contenedor-index{
-    text-align: center;
-    padding: 20px 40px;
-    
-}
-.contenedor-index a{
+.seccion-index {
+  display: flex;
+  margin-top: 2.5rem; }
+  .seccion-index p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem; }
+
+.contenedor-index {
+  text-align: center;
+  padding: 20px 40px; }
+  .contenedor-index a {
     text-decoration: none;
-    color: black;
-}
-.contenedor-index h3{
-    font-family: 'Roboto', sans-serif;
-}
-.seccion-index p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-}
+    color: black; }
+  .contenedor-index h3 {
+    font-family: "Roboto", sans-serif; }
 
+.fondo-adoptame {
+  background-image: url(../assets/img/fotos-adopcion/fondo-adoptame.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
-/* ==== ADOPTAME-MAIN ======*/
+.contenedor-adoptame {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  margin-top: 3.125rem;
+  gap: 2.8125rem;
+  margin-bottom: 4.0625rem; }
 
+.fondo-baño-y-pelu {
+  background-image: url(../assets/img/fondo-bano-y-peluqeria.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
-.titulo-adoptame h2 {
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-size: 3.125rem;
-    margin-bottom: 22px;
-}
+.fondo-buscatp {
+  background-image: url(../assets/img/paseador/fondo-paseador.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
-.titulo-adoptame p{
-    font-size: 30px;
-    text-align: initial;
-    font-family: 'Roboto', sans-serif;
-}
+.contenedor-buscatp {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  margin-top: 3.125rem;
+  gap: 2.8125rem;
+  margin-bottom: 4.0625rem; }
 
-/* ==== SECCION QUIENES SOMOS / BANNER PRINCIPAL ======*/
+.titulos-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .titulos-main img {
+    margin-bottom: 1.25rem; }
+  .titulos-main h2 {
+    font-family: "Roboto", sans-serif; }
+  .titulos-main p {
+    font-family: "Roboto", sans-serif;
+    width: 70%; }
+
+.fondo-formulario {
+  background-image: url(../assets/img/fondo-formulario.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 37.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.color-fondo {
+  background-color: #fff9de90; }
+
+.fondo-iniciar-sesion {
+  background-image: url(../assets/img/fondo-iniciar-sesion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 31.25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.titulo-formulario {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.25rem; }
+
+.form-inicio-sesion form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column; }
+  .form-inicio-sesion form fieldset label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif; }
+    .form-inicio-sesion form fieldset label input {
+      font-size: 1.25rem; }
+
+.submit-is {
+  font-size: .75rem;
+  margin-top: 2.8125rem; }
 
 .fondo-quienes-somos {
-    background-image: url(../assets/img/mati-y-peque.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-}
-.contenedor-parrafo-quienes-somos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(128, 128, 128, 0.343);
-}
+  background-image: url(../assets/img/mati-y-peque.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
-.contenedor-parrafo-quienes-somos p {
+.contenedor-parrafo-quienes-somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.343); }
+  .contenedor-parrafo-quienes-somos p {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 3.6875rem;
     width: 90%;
-    text-align: center;
-}
-
-/* ==== SECCION QUIENES SOMOS / QUIENES SOMOS ======*/
+    text-align: center; }
 
 .contenedor-quienes-somos {
-    display: flex;
-    justify-content: center;
-    padding: 80px 0px;
-}
+  display: flex;
+  justify-content: center;
+  padding: 80px 0px;
+  gap: 3.75rem; }
 
 .contenedor-elementos-qs {
-    text-align: center;
-    flex: 0 0 33%;
-    padding: 0 30px;
-}
-
-.contenedor-elementos-qs h2 {
-    font-family: 'Roboto', sans-serif;
+  text-align: center;
+  flex: 0 0 33%;
+  padding: 0 30px; }
+  .contenedor-elementos-qs h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 2.1875rem;
     margin-top: 1.25rem;
-    margin-bottom: 14px;
-}
-
-.contenedor-elementos-qs p {
-    font-family: 'Poppins', sans-serif;
+    margin-bottom: 14px; }
+  .contenedor-elementos-qs p {
+    font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     line-height: 28px;
-    font-weight: 300;
-}
+    font-weight: 300; }
 
-/**VETERINARIO**/
+.fondo-vet {
+  background-image: url(../assets/img/fondo-veterinario.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.25rem; }
 
-
-.fondo-vet{
-    background-image: url(../assets/img/fondo-veterinario.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-.textos-main{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    padding: 3.4375rem;
-}
-.textos-main h1{
-    font-family: 'Roboto', sans-serif;
+.textos-main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 3.4375rem;
+  background-color: rgba(128, 128, 128, 0.343); }
+  .textos-main h1 {
+    font-family: "Roboto", sans-serif;
     font-size: 3.125rem;
     width: 100%;
-    margin-top: 3.75rem;
-}
-.textos-main p{
-    font-family: 'Poppins', sans-serif;
+    margin-top: 3.75rem; }
+  .textos-main p {
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 2.8125rem;
     width: 60%;
     margin-top: 1.25rem;
-    line-height: 3.125rem;
-}
-.seccion-index-tamaño-vet{
-    width: 100%;
-    height: 25rem;
-}
-.contenedor-veterinaria{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1.875rem;
-}
+    line-height: 3.125rem; }
 
-/**INICIAR SESION**/
+.seccion-index-tamaño-vet {
+  width: 100%;
+  height: 25rem; }
 
-.fondo-iniciar-sesion{
-    background-image: url(../assets/img/fondo-iniciar-sesion.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 31.25rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.titulo-formulario{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1.25rem;
-}
-.form-inicio-sesion form fieldset{
-    border: none;
-    display: flex;
-    flex-direction: column; 
-}
-.form-inicio-sesion form fieldset label{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-.form-inicio-sesion form fieldset label input{
-    font-size: 1.25rem;
-}
-.submit{
-    font-size: .75rem;
-    margin-top: 2.8125rem;
-}
+.contenedor-veterinaria {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.875rem; }
 
-/**FORMULARIO**/
+footer {
+  background-color: #FFF9DE;
+  height: auto; }
 
-.fondo-formulario{
-    background-image: url(../assets/img/fondo-formulario.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 37.5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.color-fondo{
-    background-color: #fff9de90;
-}
-
-/**BUSCA TU PASEADOR**/
-
-.fondo-buscatp{
-    background-image: url(../assets/img/paseador/fondo-paseador.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-}
-.contenedor-buscatp{
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
-    margin-top: 3.125rem;
-    gap: 2.8125rem;
-    margin-bottom: 4.0625rem;
-}
-
-.titulos-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.titulos-main img{
-    margin-bottom: 1.25rem;
-}
-.titulos-main h2{
-    font-family: 'Roboto', sans-serif;
-}
-.titulos-main p{
-    font-family: 'Poppins', sans-serif;
-    width: 70%;
-}
-.fondo-buscatp div{
-    color: white;
-    background-color: rgb(128, 128, 128, 0.343);
-    
-}
-
-/**BAÑO Y PELUQUERIA**/
-
-.fondo-baño-y-pelu{
-    background-image: url(../assets/img/bano-perro.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-}
-
-/**ADOPTAME PAGINA**/
-
-.fondo-adoptame{
-    background-image: url(../assets/img/fotos-adopcion/fondo-adoptame.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-}
-
-/* ==== FOOTER ======*/
-
-
-footer{
-    background-color: #FFF9DE;
-    height: auto;
-    padding-top: 33px;
-}
-.logo-footer{
-    position: relative;
-    top: 4.375rem;
-}
-
-.logo{
-    width: 7.5rem;
-}
-
-.fb-ig{
-    display: flex;
-    justify-content: end;
-    position: relative;
-    top: 3.125rem;
-    right: 11.875rem;
-    gap: .5rem;
-}
-
-.fb-ig a img{
-    height: 2.5rem;
-    width: 2.5rem;
-}
+.logo-footer-2 img {
+  max-width: 7.5rem; }
 
 .contenedor-texto-footer {
-    justify-content: end;
-    display: flex;
-}
-
-.texto-footer {
+  display: flex;
+  justify-content: end; }
+  .contenedor-texto-footer ul {
     display: flex;
     justify-content: end;
     gap: 1.875rem;
     list-style: none;
-    align-self: center;
-    position: relative;
-    right: 1.875rem;
-    bottom: 4.375rem;
-}
+    margin-right: 1.25rem; }
+    .contenedor-texto-footer ul li a {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2rem;
+      color: black;
+      text-decoration: none; }
 
-.texto-footer li a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-}
-
-.contactanos {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    bottom: 3.125rem;
-    right: 1.5rem;
-}
-
-.contactanos button {
+.contactanos-2 {
+  display: flex;
+  justify-content: end; }
+  .contactanos-2 button {
     padding: 6px 12px;
-}
-
-.contactanos button a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.375rem;
-}
-
-.info-footer {
-    display: flex;
-    gap: 0.9375rem;
-    justify-content: center;
-    position: relative;
-    bottom: 1.25rem;
-}
-.info-footer li {
-    font-family: 'Poppins', sans-serif;
-    font-size: .75rem;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-/* ==== FOOTER 2 ======*/
-
-
-.footer-2 {
-    background-color: #FFF9DE;
-    height: auto;
-    display: flex;
-    width: 94%;
-    margin: 0 auto;
-}
-
-.contenerdor-footer-1{
-	flex: 0 0 20%;
-}
-.contenerdor-footer-2{
-	flex: 0 0 80%;
-}
-.contenerdor-footer-3 {
-    flex: 0 0 100%;
-}
-
-.logo-footer-2 {
-    position: initial;
-}
-
-.contactanos-2 button {
-    padding: 6px 12px;
-}
-
-.contactanos-2 button a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-}
+    border-radius: 1.25rem;
+    background-color: #d3d1d1;
+    margin-right: 1.25rem;
+    border: none; }
+    .contactanos-2 button a {
+      text-decoration: none;
+      color: black;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.1rem; }
 
 .fb-ig-2 {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-}
-
-.fb-ig-2 a img {
-    width: 2.5rem;
-}
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.25rem; }
+  .fb-ig-2 a img {
+    height: 1.875rem; }
 
 .info-footer-2 {
-    display: flex;
-    gap: 0.9375rem;
-    justify-content: center;
-    position: relative;
-    padding: 20px 0;
-    margin-bottom: 0;
-}
-
-.info-footer-2 li {
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  gap: 0.9375rem;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-bottom: .3125rem;
+  padding-left: 0; }
+  .info-footer-2 li {
+    font-family: "Poppins", sans-serif;
     font-size: .75rem;
     text-decoration: none;
-    list-style: none;
-}
+    list-style: none; }
 
-.texto-footer-2 {
-    display: flex;
-    justify-content: end;
-    gap: 1.875rem;
-    list-style: none;
-}
-
-.texto-footer-2 li a{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-}
-.contactanos-2{
-    display: flex;
-    justify-content: end;
-    margin-top: 20px;
-}
-
-
-@media (max-width: 1024px)
-{
-
-    .contenedor-titulo-principal{
-        padding: 0;
-        text-align: center;
-        background-color: rgba(128, 128, 128, 0.343);
-    }
-    
-    .fondo-main div h1{
-        display: block;
-        
-    }
-    .fondo-main div p{
-        width: 100%;
-        padding-bottom: 1.875rem;
-        
-    }
-    .seccion-index-tamaño{
-        height: auto;
-    }
-    .seccion-index{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        
-    }
-
-    /*BUSCA TU PASEADOR*/
-    .contenedor-buscatp{
-        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
-
-    }
-    .textos-main{
-        width: 100%;
-        
-    }
-
-    /*VETERINARIO*/
-    .seccion-index-tamaño-vet{
-        height: auto;
-    }
-
-    .contenedor-veterinaria{
-        flex-direction: column;
-    }
-
-    
-}
-@media (max-width: 768px)
-{
-    /**NAVBAR**/
-    
-    .navbar{
-        gap: .625rem;
-        margin-bottom: 0;
-    }
-    .navbar li a{
-        font-size: 1.1875rem;
-    }
-
-    /**INDEX**/
-    .fondo-main{
-        background-size: cover;
-        background-position: top;
-        height: 28.125rem;
-        
-    }   
-    .contenedor-titulo-principal{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 2.5rem;
-    }
-    .fondo-main div h1{
-        font-size: 2.25rem;   
-        width: 100%;
-        text-align: center;
-        margin-top: 1.125rem;
-    }
-    .fondo-main div p{
-        font-size: 1.25rem;
-        text-align: center;
-        line-height: 1.5;
-        margin-top: .5rem;  
-    }
-    .titulo-main{
-        font-size: 1.875rem
-    }
-    .seccion-index-tamaño{
-        height: auto;
-    }
-    .seccion-index{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 20px;
-    }
-
-    footer{
-        padding-top: 0;
-    }
-    .footer-2{
-        padding-top: 1.875rem;
-    }
-    .logo-footer-2 img{     
-        height: 5.625rem;
-        width: 5.625rem;
-    }
-    .texto-footer-2{
-        gap: .75rem;
-    }
-    .texto-footer-2 li a{
-        font-size: .8125rem;
-    }
-    .contactanos-2 button a{
-        font-size: .75rem;
-    }
-    .fb-ig-2 a img{
-        height: 1.25rem;
-        width: 1.25rem;
-    }
-    .info-footer-2{
-        padding: 0;
-        margin-bottom: 0;
-    }
-    .info-footer-2 li{ 
-        font-size: .625rem;
-    }
-    .contenedor-texto-footer{
-        gap: 10p;
-    }
-    .contenerdor-footer-3{
-        padding-bottom: .9375rem;
-    }
-
-    /**QUIENES SOMOS**/
-    .fondo-quienes-somos{
-        background-size: cover;
-        background-position: top;
-        height: 28.125rem;
-        
-    }
-    .contenedor-parrafo-quienes-somos p{
-        font-size: 2.5rem;
-    }
-    .contenedor-quienes-somos{
-        display: flex;
-        flex-direction: column;
-        gap: 3.125rem;
-    }   
-
-    /*VETERINARIO*/
-    .fondo-vet{
-        background-size: cover;
-        background-position: top;
-        height: 28.125rem;
-        color: white;
-    }
-    .textos-main{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 2.5rem;
-        background-color: rgba(128, 128, 128, 0.343);
-        
-    }
-    .fondo-vet h1{
-        font-size: 2.25rem;   
-        width: 100%;
-        text-align: center;
-        margin-top: 1.125rem;;
-    }
-    .fondo-vet p{
-        font-size: 1.25rem;
-        text-align: center;
-        line-height: 1.5;
-        margin-top: .5rem;
-        width: 100%;
-    }
-    /*BUSCA TU PASEADOR*/
-
-    .fondo-buscatp{
-        background-size: cover;
-        background-position: top;
-        height: 28.125rem;
-    }
-    .textos-main{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 2.5rem;
-    }
-    .fondo-buscatp h1{
-        font-size: 2.25rem;   
-        text-align: center;
-        margin-top: 1.125rem;
-    }
-    .fondo-buscatp p{
-        font-size: 1.25rem;
-        text-align: center;
-        line-height: 1.5;
-        margin-top: .5rem;
-        width: 100%;
-    }
-    /*BAÑO Y PELUQUERIA*/
-
-    .fondo-baño-y-pelu{
-        background-size: cover;
-        background-position: top;
-        height: 28.125rem;
-    }
-    .textos-main{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 2.5rem;
-    }
-    .fondo-baño-y-pelu h1{
-        font-size: 2.25rem;   
-        width: 100%;
-        text-align: center;
-        margin-top: 1.125rem;
-    }
-    .fondo-baño-y-pelu p{
-        font-size: 1.25rem;
-        text-align: center;
-        line-height: 1.5;
-        margin-top: .5rem;
-        width:100%;
-    }
-    .fondo-adoptame{
-        background-size: cover;
-        background-position: top;
-        height: 28.125rem;
-    }
-    .textos-main{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 2.5rem;
-    }
-    .fondo-adoptame h1{
-        font-size: 2.25rem;   
-        width: 100%;
-        text-align: center;
-        margin-top: 1.125rem;
-    }
-    .fondo-adoptame p{
-        font-size: 1.25rem;
-        text-align: center;
-        line-height: 1.5;
-        margin-top: .5rem;
-	    width:100%;
-    }
-    
-    }
-@media (max-width: 425px)
-{ 
-
-    /**INDEX**/
-    .fondo-main{
-        background-size: cover;
-        background-position: top;
-        height: 21.875rem;
-    }
-
-    .fondo-main div h1{
-        font-size: 1.25rem;
-        width: 100%;  
-    }
-    .fondo-main div p{
-        font-size: 1rem;
-        width: 100%;
-    }
-    .titulo-main{
-        font-size: 1.875rem;
-    }
-    .seccion-index-tamaño{
-        height: 96.875rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        height: auto;
-    }
-    .seccion-index{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-
-    /**FOOTER**/
-
-    .logo-footer-2 img{     
-        height: 3.75rem;
-        width: 3.75rem;
-    }
-    .texto-footer-2{
-        gap: .75rem;  
-    }
-    .texto-footer-2 li a{
-        font-size: .8125rem;
-    }
-    .contactanos-2 button a{
-        font-size: .75rem;
-    }
-    .fb-ig-2 a img{
-        height: 1.25rem;
-        width: 1.25rem;
-    }
-    .info-footer-2{
-        padding: 0;
-        margin-bottom: 0;
-    }
-    .info-footer-2 li{ 
-        font-size: .625rem;
-    }
-    .contenedor-texto-footer{
-        margin-right: .625rem;
-    }
-    
-
-    /**VETERINARIO**/
- 
-    .fondo-vet{
-        background-size: cover;
-        background-position: top;
-        height: 21.875rem;  
-    }
-    .fondo-vet div h1{
-        font-size: 1.25rem;
-        width: 100%;  
-    }
-    .fondo-vet div p{
-        font-size: 1rem;
-        width: 100%;
-    }
-   
-    .seccion-index-tamaño-vet{
-        height: auto;
-    }
-    .titulo-main{
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 0 1.25rem;
-    }
-    .contenedor-veterinaria{
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor-veterinaria div a img{
-        height: 11.875rem;
-    }
-
-    /**QUIENES SOMOS**/
-
-    .fondo-quienes-somos{
-        background-size: cover;
-        background-position: top;
-        height: 21.875rem;
-    }
-    .contenedor-parrafo-quienes-somos p{
-        font-size: 1.25rem;
-        margin-top: 1.375rem;
-    }
-    .contenedor-quienes-somos{
-        display: flex;
-        flex-direction: column;
-        gap: 3.125rem;
-        padding: 0;
-        margin-top: 1.875rem;
-    }
-    .contenedor-elementos-qs img{
-        max-width: 11.25rem;
-        height: auto;
-    }
-    .contenedor-elementos-qs p{
-        font-size: .9375rem;
-        line-height: 1.25rem;
-    }   
-    /*INICIAR SESION*/
-    
-    .form-inicio-sesion{
-        width: 60%;
-    }
-    .submit-is{
-        padding-top: .9375rem;
-    }
-
-/*BUSCA TU PASEADOR*/
-    .fondo-buscatp{
-        background-size: cover;
-        background-position: top;
-        height: 21.875rem; 
-    }
-    .fondo-buscatp h1{
-        font-size: 1.25rem;
-        width: 100%; 
-    }
-    .fondo-buscatp p{
-        font-size: 1rem;
-        width: 100%;
-    }
-    .contenedor-buscatp{
-        display: flex;
-        flex-direction: column; 
-    }
-
-    /*BAÑO Y PELUQUERIA*/
-
-    .fondo-baño-y-pelu{
-        background-size: cover;
-        background-position: top;
-        height: 21.875rem;
-    }
-    .fondo-baño-y-pelu h1{
-        font-size: 1.25rem;
-        width: 100%;  
-    }
-    .fondo-baño-y-pelu p{
-        font-size: 1rem;
-        width: 100%;
-    }
-    /*ADOPTAME*/
-
-    .fondo-adoptame{
-        background-size: cover;
-        background-position: top;
-        height: 21.875rem; 
-    }
-    .fondo-adoptame h1{
-        font-size: 1.25rem;
-        width: 100%; 
-    }
-    .fondo-adoptame p{
-        font-size: 1rem;
-        width: 100%;
-    }
-}
-
-@media (max-width: 320px){
-
-.logo-navbar{
-    max-width: 8.125rem;
-    height: auto;
-}
-
-.contenedor-titulo-principal{
+@media (max-width: 1024px) {
+  .contenedor-principal {
     padding: 0;
-    align-items: center;
-}
-.fondo-main div p{
-    width: 90%;
-}
-.seccion-index-tamaño{
-    height: auto;
-}
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.343); }
+  .fondo.main div h1 {
+    display: block; }
+  .fondo.main div p {
+    width: 100%;
+    padding-bottom: 1.875rem; }
+  .seccion-index-tamaño {
+    height: auto; }
+  .seccion-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+  .contenedor-texto-footer ul {
+    margin-right: 1.25rem; } }
 
-.contenedor-index a img{
+@media (max-width: 768px) {
+  .navbar {
+    gap: .625rem;
+    margin-bottom: 0; }
+    .navbar li a {
+      font-size: 1.1875rem; }
+  .fondo-main {
+    background-size: cover;
+    background-position: top;
+    height: 28.125rem; }
+    .fondo-main div {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .fondo-main div h1 {
+        font-size: 2.25rem;
+        width: 80%;
+        text-align: center;
+        margin-top: 1.125rem; }
+      .fondo-main div p {
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: .5rem;
+        width: 80%; }
+  .titulo-main {
+    font-size: 1.875rem; }
+  .seccion-index-tamaño {
+    height: auto; }
+  .seccion-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; }
+  footer {
+    padding-top: 0; }
+  .footer-2 {
+    padding-top: 1.875rem; }
+  .logo-footer-2 img {
+    height: 5.625rem;
+    width: 5.625rem; }
+  .contactanos-2 button a {
+    font-size: .75rem; }
+  .fb-ig-2 a img {
+    height: 1.25rem;
+    width: 1.25rem; }
+  .info-footer-2 {
+    padding: 0;
+    margin-bottom: 0; }
+    .info-footer-2 li {
+      font-size: .625rem; }
+  .contenedor-texto-footer {
+    gap: 10p; }
+    .contenedor-texto-footer ul {
+      margin-right: .9375rem; }
+      .contenedor-texto-footer ul li a {
+        font-size: .8125rem;
+        gap: .75rem; }
+  .contenerdor-footer-3 {
+    padding-bottom: .9375rem; }
+  .fondo-quienes-somos {
+    background-size: cover;
+    background-position: top;
+    height: 28.125rem; }
+  .contenedor-parrafo-quienes-somos p {
+    font-size: 2.5rem; }
+  .contenedor-quienes-somos {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem; }
+  .fondo-vet {
+    background-size: cover;
+    background-position: top;
+    height: 28.125rem;
+    color: white; }
+    .fondo-vet h1 {
+      font-size: 2.25rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 1.125rem; }
+    .fondo-vet p {
+      font-size: 1.25rem;
+      text-align: center;
+      line-height: 1.5;
+      margin-top: .5rem;
+      width: 100%; }
+  .textos-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 2.5rem;
+    background-color: rgba(128, 128, 128, 0.343); }
+  .seccion-index-tamaño-vet {
+    height: auto; }
+  .contenedor-veterinaria {
+    display: flex;
+    flex-direction: column; }
+  .fondo-buscatp {
+    background-size: cover;
+    background-position: top;
+    height: 28.125rem; }
+    .fondo-buscatp h1 {
+      font-size: 2.25rem;
+      text-align: center;
+      margin-top: 1.125rem; }
+    .fondo-buscatp p {
+      font-size: 1.25rem;
+      text-align: center;
+      line-height: 1.5;
+      margin-top: .5rem;
+      width: 100%; }
+  .contenedor-buscatp {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    margin-top: 3.125rem;
+    gap: 2.8125rem;
+    margin-bottom: 4.0625rem; }
+  .fondo-baño-y-pelu {
+    background-size: cover;
+    background-position: top;
+    height: 28.125rem; }
+    .fondo-baño-y-pelu h1 {
+      font-size: 2.25rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 1.125rem; }
+    .fondo-baño-y-pelu p {
+      font-size: 1.25rem;
+      text-align: center;
+      line-height: 1.5;
+      margin-top: .5rem;
+      width: 100%; }
+  .fondo-adoptame {
+    background-size: cover;
+    background-position: top;
+    height: 28.125rem; }
+    .fondo-adoptame h1 {
+      font-size: 2.25rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 1.125rem; }
+    .fondo-adoptame p {
+      font-size: 1.25rem;
+      text-align: center;
+      line-height: 1.5;
+      margin-top: .5rem;
+      width: 100%; }
+  .textos-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 2.5rem;
+    background-color: rgba(128, 128, 128, 0.343); }
+  .contenedor-adoptame {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr; } }
+
+@media (max-width: 425px) {
+  .fondo-main {
+    background-size: cover;
+    background-position: top;
+    height: 21.875rem; }
+    .fondo-main div h1 {
+      font-size: 1.25rem;
+      width: 100%; }
+    .fondo-main div p {
+      font-size: 1rem;
+      width: 100%; }
+  .titulo-main {
+    font-size: 1.875rem; }
+  .seccion-index-tamaño {
+    height: 96.875rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto; }
+  .seccion-index {
+    display: flex;
+    flex-direction: column; }
+  .logo-footer-2 img {
+    height: 3.75rem;
+    width: 3.75rem; }
+  .contactanos-2 button a {
+    font-size: .75rem; }
+  .fb-ig-2 a img {
+    height: 1.25rem;
+    width: 1.25rem; }
+  .info-footer-2 {
+    padding: 0;
+    margin-bottom: 0; }
+    .info-footer-2 li {
+      font-size: .625rem; }
+  .contenedor-texto-footer {
+    margin-right: .625rem; }
+    .contenedor-texto-footer ul {
+      display: flex;
+      flex-direction: column;
+      gap: .3125rem; }
+      .contenedor-texto-footer ul li {
+        display: flex;
+        flex-direction: column; }
+        .contenedor-texto-footer ul li a {
+          font-size: .75rem; }
+  .fondo-vet {
+    background-size: cover;
+    background-position: top;
+    height: 21.875rem; }
+    .fondo-vet div h1 {
+      font-size: 1.25rem;
+      width: 100%; }
+    .fondo-vet div p {
+      font-size: 1rem;
+      width: 100%; }
+  .seccion-index-tamaño-vet {
+    height: auto; }
+  .titulo-main {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 1.25rem; }
+  .contenedor-veterinaria {
+    display: flex;
+    flex-direction: column; }
+    .contenedor-veterinaria div a img {
+      height: 11.875rem; }
+  .fondo-quienes-somos {
+    background-size: cover;
+    background-position: top;
+    height: 21.875rem; }
+  .contenedor-parrafo-quienes-somos p {
+    font-size: 1.25rem;
+    margin-top: 1.375rem; }
+  .contenedor-quienes-somos {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    padding: 0;
+    margin-top: 1.875rem; }
+  .contenedor-elementos-qs img {
     max-width: 11.25rem;
-    height: auto;
-}
-.texto-footer-2 li a{
-    font-size: .5rem;
-}
-.info-footer-2 li{
-    font-size: .5rem;
-}
+    height: auto; }
+  .contenedor-elementos-qs p {
+    font-size: .9375rem;
+    line-height: 1.25rem; }
+  .form-inicio-sesion {
+    width: 60%; }
+  .submit-is {
+    padding-top: .9375rem; }
+  .fondo-buscatp {
+    background-size: cover;
+    background-position: top;
+    height: 21.875rem; }
+    .fondo-buscatp h1 {
+      font-size: 1.25rem;
+      width: 100%; }
+    .fondo-buscatp p {
+      font-size: 1rem;
+      width: 100%; }
+  .contenedor-buscatp {
+    display: flex;
+    flex-direction: column; }
+  .fondo-baño-y-pelu {
+    background-size: cover;
+    background-position: top;
+    height: 21.875rem; }
+    .fondo-baño-y-pelu h1 {
+      font-size: 1.25rem;
+      width: 100%; }
+    .fondo-baño-y-pelu p {
+      font-size: 1rem;
+      width: 100%; }
+  .fondo-adoptame {
+    background-size: cover;
+    background-position: top;
+    height: 21.875rem; }
+    .fondo-adoptame h1 {
+      font-size: 1.25rem;
+      width: 100%; }
+    .fondo-adoptame p {
+      font-size: 1rem;
+      width: 100%; }
+  .contenedor-adoptame {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
 
-/*VETERINARIO*/
-
-.textos-main{
+@media (max-width: 320px) {
+  .logo-navbar {
+    max-width: 8.125rem;
+    height: auto; }
+  .contenedor-titulo-principal {
     padding: 0;
-    margin: 0;
-}
-
-/*QUIENES SOMOS*/
-
-.fondo-quienes-somos{
+    align-items: center; }
+  .fondo-main div p {
+    width: 90%; }
+  .seccion-index-tamaño {
+    height: auto; }
+  .contenedor-index a img {
+    max-width: 11.25rem;
+    height: auto; }
+  .contenedor-texto-footer ul li a {
+    font-size: .75rem; }
+  .info-footer-2 li {
+    font-size: .5rem; }
+  .textos-main {
     padding: 0;
-    align-items: center;
-}
-
-.contenedor-quienes-somos{
-    margin-top: 5rem;
-}
-.contenedor-parrafo-quienes-somos p{
-    margin-bottom: .9375rem;
-}
-.contactanos-2 button{
-   padding-top: .0625rem;
-} 
-
-
-}
-
+    margin: 0; }
+  .fondo-quienes-somos {
+    padding: 0;
+    align-items: center; }
+  .contenedor-quienes-somos {
+    margin-top: 5rem; }
+  .contenedor-parrafo-quienes-somos p {
+    margin-bottom: .9375rem; }
+  .contactanos-2 button {
+    padding-top: .0625rem; } }

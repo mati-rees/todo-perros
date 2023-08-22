@@ -1,0 +1,64 @@
+@media (max-width: 320px){
+
+.logo-navbar{
+    max-width: 8.125rem;
+    height: auto;
+}
+.contenedor-titulo-principal{
+    padding: 0;
+    align-items: center;
+}
+.fondo-main{
+    div{
+        p{
+            width: 90%;
+        }
+    }
+}
+.seccion-index-tamaño{
+    height: auto;
+}
+.contenedor-index{
+    a{
+        img{
+            max-width: 11.25rem;
+            height: auto;
+        }
+    }
+}
+.contenedor-texto-footer{
+    ul{
+        li{
+            a{
+                font-size: .75rem;
+            }
+        }
+    }
+}
+.info-footer-2{
+    li{
+        font-size: .5rem;
+    }
+}
+.textos-main{
+    padding: 0;
+    margin: 0;
+}
+.fondo-quienes-somos{
+    padding: 0;
+    align-items: center;
+}
+.contenedor-quienes-somos{
+    margin-top: 5rem;
+}
+.contenedor-parrafo-quienes-somos{
+    p{
+        margin-bottom: .9375rem;
+    }
+}
+.contactanos-2{
+    button{
+        padding-top: .0625rem;
+    }
+}
+}
