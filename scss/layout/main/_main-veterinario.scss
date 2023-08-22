@@ -1,20 +1,11 @@
 .fondo-vet{
+    @extend .fondo-adoptame;
     background-image: url(../assets/img/fondo-veterinario.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     gap: 1.25rem;
 }
 .textos-main{
     color: $color-font-white;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    @include flex(column, none, center, 0);
     padding: 3.4375rem;
     background-color: $color-de-fondo-texto-main;
     h1{
@@ -37,8 +28,6 @@
     height: 25rem;
 }
 .contenedor-veterinaria{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex (none, center, space-between, 0);
     margin: 1.875rem; 
 }

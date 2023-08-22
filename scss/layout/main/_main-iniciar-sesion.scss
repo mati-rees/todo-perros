@@ -1,13 +1,7 @@
 .fondo-iniciar-sesion{
+    @extend .fondo-adoptame;
     background-image: url(../assets/img/fondo-iniciar-sesion.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 31.25rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    height: 31.25rem; 
     align-items: center;
 }
 .titulo-formulario{
@@ -24,9 +18,7 @@
             display: flex;
             flex-direction: column;
             label{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
+                @include flex(column, center, none, 0);
                 color: $color-font-white;
                 font-family: $tipografia-poppins;
                 input{

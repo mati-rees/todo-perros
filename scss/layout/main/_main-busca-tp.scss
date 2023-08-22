@@ -1,13 +1,6 @@
 .fondo-buscatp{
     background-image: url(../assets/img/paseador/fondo-paseador.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @extend .fondo-adoptame;
 }
 .contenedor-buscatp{
     display: grid;
@@ -17,11 +10,7 @@
     margin-bottom: 4.0625rem;
 }
 .titulos-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    @include flex(column, center, center,0);
     img{
         margin-bottom: 1.25rem;
     }

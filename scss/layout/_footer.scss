@@ -31,20 +31,6 @@ footer{
     display: flex;
     justify-content: end;
     
-
-    button{
-        padding: 6px 12px;
-        border-radius: 1.25rem;
-        background-color: rgb(211, 209, 209);
-        margin-right: 1.25rem;
-        border: none;
-        a {
-            text-decoration: none;
-            color: black;
-            font-family: $tipografia-roboto;
-            font-size: 1.1rem;
-        }
-    }
 }
 .fb-ig-2{
     display: flex;

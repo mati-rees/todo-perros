@@ -5,9 +5,7 @@
     background-size: cover;
     width: 100%;
     height: 43.75rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
+    @include flex(column, none, center, 0);
 }
 .contenedor-adoptame{
     display: grid;

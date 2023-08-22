@@ -35,7 +35,7 @@
   width: 100%;
   height: 43.75rem;
   display: flex;
-  flex-direction: column;
+  align-items: none;
   justify-content: center;
   gap: 1.25rem; }
 
@@ -66,8 +66,9 @@
 
 .titulo-main {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 0;
   margin-top: 2.1875rem;
   font-family: "Roboto", sans-serif;
   color: black;
@@ -89,7 +90,7 @@
   .contenedor-index h3 {
     font-family: "Roboto", sans-serif; }
 
-.fondo-adoptame {
+.fondo-adoptame, .fondo-baño-y-pelu, .fondo-buscatp, .fondo-formulario, .fondo-iniciar-sesion, .fondo-quienes-somos, .fondo-vet {
   background-image: url(../assets/img/fotos-adopcion/fondo-adoptame.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -97,8 +98,9 @@
   width: 100%;
   height: 43.75rem;
   display: flex;
+  align-items: none;
   justify-content: center;
-  flex-direction: column; }
+  gap: 0; }
 
 .contenedor-adoptame {
   display: grid;
@@ -108,26 +110,10 @@
   margin-bottom: 4.0625rem; }
 
 .fondo-baño-y-pelu {
-  background-image: url(../assets/img/fondo-bano-y-peluqeria.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 43.75rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  background-image: url(../assets/img/fondo-bano-y-peluqeria.jpg); }
 
 .fondo-buscatp {
-  background-image: url(../assets/img/paseador/fondo-paseador.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 43.75rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  background-image: url(../assets/img/paseador/fondo-paseador.jpg); }
 
 .contenedor-buscatp {
   display: grid;
@@ -138,10 +124,9 @@
 
 .titulos-main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  gap: 0; }
   .titulos-main img {
     margin-bottom: 1.25rem; }
   .titulos-main h2 {
@@ -152,14 +137,7 @@
 
 .fondo-formulario {
   background-image: url(../assets/img/fondo-formulario.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
   height: 37.5rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center; }
 
 .color-fondo {
@@ -167,14 +145,7 @@
 
 .fondo-iniciar-sesion {
   background-image: url(../assets/img/fondo-iniciar-sesion.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
   height: 31.25rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center; }
 
 .titulo-formulario {
@@ -190,8 +161,9 @@
   flex-direction: column; }
   .form-inicio-sesion form fieldset label {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: none;
+    gap: 0;
     color: white;
     font-family: "Poppins", sans-serif; }
     .form-inicio-sesion form fieldset label input {
@@ -202,15 +174,7 @@
   margin-top: 2.8125rem; }
 
 .fondo-quienes-somos {
-  background-image: url(../assets/img/mati-y-peque.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 43.75rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  background-image: url(../assets/img/mati-y-peque.jpg); }
 
 .contenedor-parrafo-quienes-somos {
   display: flex;
@@ -247,21 +211,14 @@
 
 .fondo-vet {
   background-image: url(../assets/img/fondo-veterinario.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 43.75rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   gap: 1.25rem; }
 
 .textos-main {
   color: white;
   display: flex;
-  flex-direction: column;
-  justify-items: center;
+  align-items: none;
+  justify-content: center;
+  gap: 0;
   padding: 3.4375rem;
   background-color: rgba(128, 128, 128, 0.343); }
   .textos-main h1 {
@@ -285,7 +242,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0;
   margin: 1.875rem; }
+
+button {
+  padding: 6px 12px;
+  border-radius: 1.25rem;
+  background-color: #d3d1d1;
+  margin-right: 1.25rem;
+  border: none; }
+  button a {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem; }
 
 footer {
   background-color: #FFF9DE;
@@ -312,17 +282,6 @@ footer {
 .contactanos-2 {
   display: flex;
   justify-content: end; }
-  .contactanos-2 button {
-    padding: 6px 12px;
-    border-radius: 1.25rem;
-    background-color: #d3d1d1;
-    margin-right: 1.25rem;
-    border: none; }
-    .contactanos-2 button a {
-      text-decoration: none;
-      color: black;
-      font-family: "Roboto", sans-serif;
-      font-size: 1.1rem; }
 
 .fb-ig-2 {
   display: flex;
@@ -497,16 +456,16 @@ footer {
       line-height: 1.5;
       margin-top: .5rem;
       width: 100%; }
-  .fondo-adoptame {
+  .fondo-adoptame, .fondo-baño-y-pelu, .fondo-buscatp, .fondo-formulario, .fondo-iniciar-sesion, .fondo-quienes-somos, .fondo-vet {
     background-size: cover;
     background-position: top;
     height: 28.125rem; }
-    .fondo-adoptame h1 {
+    .fondo-adoptame h1, .fondo-baño-y-pelu h1, .fondo-buscatp h1, .fondo-formulario h1, .fondo-iniciar-sesion h1, .fondo-quienes-somos h1, .fondo-vet h1 {
       font-size: 2.25rem;
       width: 100%;
       text-align: center;
       margin-top: 1.125rem; }
-    .fondo-adoptame p {
+    .fondo-adoptame p, .fondo-baño-y-pelu p, .fondo-buscatp p, .fondo-formulario p, .fondo-iniciar-sesion p, .fondo-quienes-somos p, .fondo-vet p {
       font-size: 1.25rem;
       text-align: center;
       line-height: 1.5;
@@ -634,14 +593,14 @@ footer {
     .fondo-baño-y-pelu p {
       font-size: 1rem;
       width: 100%; }
-  .fondo-adoptame {
+  .fondo-adoptame, .fondo-baño-y-pelu, .fondo-buscatp, .fondo-formulario, .fondo-iniciar-sesion, .fondo-quienes-somos, .fondo-vet {
     background-size: cover;
     background-position: top;
     height: 21.875rem; }
-    .fondo-adoptame h1 {
+    .fondo-adoptame h1, .fondo-baño-y-pelu h1, .fondo-buscatp h1, .fondo-formulario h1, .fondo-iniciar-sesion h1, .fondo-quienes-somos h1, .fondo-vet h1 {
       font-size: 1.25rem;
       width: 100%; }
-    .fondo-adoptame p {
+    .fondo-adoptame p, .fondo-baño-y-pelu p, .fondo-buscatp p, .fondo-formulario p, .fondo-iniciar-sesion p, .fondo-quienes-somos p, .fondo-vet p {
       font-size: 1rem;
       width: 100%; }
   .contenedor-adoptame {
