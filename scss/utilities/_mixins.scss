@@ -1,6 +1,15 @@
 @mixin flex($direction, $align, $justify, $gap){
     display: flex;
+    flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
     gap: $gap;
 }
+@mixin background ($image, $position, $repeat, $size, $width, $height){
+    background-image:$image;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+    width: $width;
+    height: $height;   
+} 
