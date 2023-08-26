@@ -104,7 +104,7 @@
 
 .contenedor-adoptame {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
   margin-top: 3.125rem;
   gap: 2.8125rem;
   margin-bottom: 4.0625rem; }
@@ -114,13 +114,6 @@
 
 .fondo-buscatp {
   background-image: url(../assets/img/paseador/fondo-paseador.jpg); }
-
-.contenedor-buscatp {
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
-  margin-top: 3.125rem;
-  gap: 2.8125rem;
-  margin-bottom: 4.0625rem; }
 
 .titulos-main {
   display: flex;
@@ -135,6 +128,13 @@
   .titulos-main p {
     font-family: "Roboto", sans-serif;
     width: 70%; }
+
+.contenedor-buscatp {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  margin-top: 3.125rem;
+  gap: 2.8125rem;
+  margin-bottom: 4.0625rem; }
 
 .fondo-formulario {
   background-image: url(../assets/img/fondo-formulario.jpg);
@@ -350,6 +350,17 @@ footer {
   .contenedor-texto-footer ul {
     margin-right: 1.25rem; } }
 
+.contenedor-adoptame {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; }
+
+.contenedor-buscatp {
+  display: grid;
+  grid-template: 1fr 1fr 1fr /  1fr 1fr 1fr;
+  margin-top: 3.125rem;
+  gap: 2.8125rem;
+  margin-bottom: 4.0625rem; }
+
 @media (max-width: 768px) {
   .navbar {
     gap: .625rem;
@@ -437,12 +448,6 @@ footer {
       line-height: 1.5;
       margin-top: .5rem;
       width: 100%; }
-  .textos-main {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 2.5rem;
-    background-color: rgba(128, 128, 128, 0.343); }
   .seccion-index-tamaño-vet {
     height: auto; }
   .contenedor-veterinaria {
@@ -508,6 +513,14 @@ footer {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr; } }
 
+@media (max-width: 507px) {
+  .contenedor-adoptame {
+    display: flex;
+    flex-direction: column; }
+  .contenedor-buscatp {
+    display: flex;
+    flex-direction: column; } }
+
 @media (max-width: 425px) {
   .fondo-main {
     background-size: cover;
@@ -519,8 +532,8 @@ footer {
     .fondo-main div p {
       font-size: 1rem;
       width: 100%; }
-  .titulo-main {
-    font-size: 1.875rem; }
+  footer {
+    width: 100%; }
   .seccion-index-tamaño {
     height: 96.875rem;
     padding-top: 0;
@@ -607,9 +620,6 @@ footer {
     .fondo-buscatp p {
       font-size: 1rem;
       width: 100%; }
-  .contenedor-buscatp {
-    display: flex;
-    flex-direction: column; }
   .fondo-baño-y-pelu {
     background-size: cover;
     background-position: top;
@@ -631,8 +641,8 @@ footer {
       font-size: 1rem;
       width: 100%; }
   .contenedor-adoptame {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
+    display: flex;
+    flex-direction: column; } }
 
 @media (max-width: 320px) {
   .logo-navbar {
@@ -664,3 +674,8 @@ footer {
     margin-bottom: .9375rem; }
   .contactanos-2 button {
     padding-top: .0625rem; } }
+
+.fondo-formulario {
+  height: auto;
+  padding-top: .9375rem;
+  padding-bottom: .9375rem; }

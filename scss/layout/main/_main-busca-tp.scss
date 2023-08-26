@@ -2,13 +2,7 @@
     background-image: url(../assets/img/paseador/fondo-paseador.jpg);
     @extend .fondo-adoptame;
 }
-.contenedor-buscatp{
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
-    margin-top: 3.125rem;
-    gap: 2.8125rem;
-    margin-bottom: 4.0625rem;
-}
+
 .titulos-main{
     @include flex(column, center, center,0);
     img{
@@ -21,4 +15,11 @@
         font-family: $tipografia-roboto;
     width: 70%;
     }
+}
+.contenedor-buscatp{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    margin-top: 3.125rem;
+    gap: 2.8125rem;
+    margin-bottom: 4.0625rem;
 }

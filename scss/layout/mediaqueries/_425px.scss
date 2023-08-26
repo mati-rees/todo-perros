@@ -1,4 +1,4 @@
-@media (max-width: 425px){
+@media (max-width:425px){
     
 .fondo-main{
     background-size: cover;
@@ -15,8 +15,8 @@
         }
     }    
 }  
-.titulo-main{
-    font-size: 1.875rem;
+footer{
+    width: 100%;
 }
 .seccion-index-tamaño{
     height: 96.875rem;
@@ -154,10 +154,6 @@
         width: 100%;
     }
 }
-.contenedor-buscatp{
-    display: flex;
-    flex-direction: column; 
-}
 .fondo-baño-y-pelu{
     background-size: cover;
     background-position: top;
@@ -185,7 +181,8 @@
     }
 }
 .contenedor-adoptame{
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    
 }
 }
