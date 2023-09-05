@@ -749,14 +749,7 @@ footer {
         font-size: 1.875rem;
         width: auto;
         margin: 0px 2.1875rem;
-        margin-bottom: 0; }
-  .fondo-adoptame, .fondo-baño-y-pelu, .fondo-buscatp, .fondo-formulario, .fondo-iniciar-sesion, .fondo-quienes-somos, .fondo-vet {
-    height: auto; } }
-
-@media (max-width: 421px) {
-  .fondo-formulario {
-    padding-top: 2.1875rem;
-    padding-bottom: 2.1875rem; } }
+        margin-bottom: 0; } }
 
 @media (max-width: 320px) {
   .logo-navbar {
