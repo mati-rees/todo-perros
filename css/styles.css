@@ -89,6 +89,10 @@
   .contenedor-index h3 {
     font-family: "Roboto", sans-serif; }
 
+.prueba-sombra {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+
 .fondo-adoptame, .fondo-baño-y-pelu, .fondo-buscatp, .fondo-formulario, .fondo-iniciar-sesion, .fondo-quienes-somos, .fondo-vet {
   background-image: url(../assets/img/fotos-adopcion/fondo-adoptame.jpg);
   background-position: center;
@@ -135,6 +139,31 @@
   margin-top: 3.125rem;
   gap: 2.8125rem;
   margin-bottom: 4.0625rem; }
+
+.img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%; }
+  .img:hover .whatsapp-link {
+    opacity: 1; }
+  .img:hover::before {
+    opacity: 1;
+    border-radius: 50%; }
+  .img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s; }
+
+.whatsapp-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s; }
 
 .fondo-formulario {
   background-image: url(../assets/img/fondo-formulario.jpg);
@@ -249,6 +278,27 @@
   gap: 0;
   margin: 1.875rem; }
 
+.error {
+  background-image: url(../assets/img/retrato-mascota-adorable-aislado.jpg);
+  height: 43.75rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .error div {
+    margin-left: 40.625rem;
+    margin-bottom: 3.75rem; }
+    .error div h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 3.75rem;
+      font-weight: 700; }
+    .error div p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.8125rem;
+      width: 80%; }
+
 .button {
   position: relative;
   overflow: hidden;
@@ -264,7 +314,7 @@
     color: black;
     font-family: 'Roboto', sans-serif; }
     .button a:hover {
-      color: white; }
+      color: black; }
   .button:hover::before {
     transform: scaleX(1); }
   .button-content {
@@ -280,7 +330,7 @@
     width: 100%;
     height: inherit;
     border-radius: inherit;
-    background: linear-gradient(90deg, #833ab4 0%, #fcb045 100%);
+    background: linear-gradient(90deg, #F9E58E 0%, #fcb045 100%);
     transition: all 0.475s; }
 
 footer {
@@ -348,18 +398,27 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr; }
   .contenedor-texto-footer ul {
-    margin-right: 1.25rem; } }
-
-.contenedor-adoptame {
-  display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; }
-
-.contenedor-buscatp {
-  display: grid;
-  grid-template: 1fr 1fr 1fr /  1fr 1fr 1fr;
-  margin-top: 3.125rem;
-  gap: 2.8125rem;
-  margin-bottom: 4.0625rem; }
+    margin-right: 1.25rem; }
+  .contenedor-adoptame {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; }
+  .contenedor-buscatp {
+    display: grid;
+    grid-template: 1fr 1fr 1fr /  1fr 1fr 1fr;
+    margin-top: 3.125rem;
+    gap: 2.8125rem;
+    margin-bottom: 4.0625rem; }
+  .error div {
+    margin-left: 28.125rem;
+    margin-bottom: 3.75rem; }
+    .error div h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700; }
+    .error div p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.875rem;
+      width: 80%; } }
 
 @media (max-width: 768px) {
   .navbar {
@@ -511,7 +570,21 @@ footer {
     background-color: rgba(128, 128, 128, 0.343); }
   .contenedor-adoptame {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr; } }
+    grid-template: 1fr 1fr 1fr / 1fr 1fr; }
+  .error {
+    background-size: cover;
+    height: 43.75rem; }
+    .error div {
+      margin-left: 20rem;
+      margin-bottom: 3.75rem; }
+      .error div h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.0625rem;
+        font-weight: 700; }
+      .error div p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.875rem;
+        width: 100%; } }
 
 @media (max-width: 507px) {
   .contenedor-adoptame {
@@ -519,7 +592,24 @@ footer {
     flex-direction: column; }
   .contenedor-buscatp {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .error {
+    background-position-x: left;
+    height: 43.75rem; }
+    .error div {
+      margin: 35px 0 0 0;
+      text-align: center; }
+      .error div h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 21.875rem; }
+      .error div p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.875rem;
+        width: 100%;
+        margin: 0 1.875rem o 1.875rem;
+        margin-bottom: 0; } }
 
 @media (max-width: 425px) {
   .fondo-main {
@@ -642,7 +732,24 @@ footer {
       width: 100%; }
   .contenedor-adoptame {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .error {
+    background-position-x: -0.625rem;
+    height: 37.5rem; }
+    .error div {
+      margin: 35px 0 0 0;
+      text-align: center; }
+      .error div h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 21.875rem; }
+      .error div p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.875rem;
+        width: auto;
+        margin: 0px 2.1875rem;
+        margin-bottom: 0; } }
 
 @media (max-width: 320px) {
   .logo-navbar {
@@ -673,9 +780,25 @@ footer {
   .contenedor-parrafo-quienes-somos p {
     margin-bottom: .9375rem; }
   .contactanos-2 button {
-    padding-top: .0625rem; } }
-
-.fondo-formulario {
-  height: auto;
-  padding-top: .9375rem;
-  padding-bottom: .9375rem; }
+    padding-top: .0625rem; }
+  .fondo-formulario {
+    height: auto;
+    padding-top: .9375rem;
+    padding-bottom: .9375rem; }
+  .error {
+    background-position-x: -4rem;
+    height: 37.5rem; }
+    .error div {
+      margin: 25px 0 0 0;
+      text-align: center; }
+      .error div h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 21.875rem; }
+      .error div p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        width: auto;
+        margin: 0px 2.1875rem;
+        margin-bottom: 0; } }

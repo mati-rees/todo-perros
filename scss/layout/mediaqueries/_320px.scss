@@ -61,9 +61,30 @@
         padding-top: .0625rem;
     }
 }
-}
 .fondo-formulario{
     height: auto;
     padding-top: .9375rem;
     padding-bottom: .9375rem;
+}
+.error{
+    background-position-x: -4rem;
+    height: 37.5rem;
+    div{
+        margin: 25px 0 0 0;
+        text-align: center;
+        h1{
+            font-family:'Roboto', sans-serif;
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 21.875rem;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            width: auto;
+            margin: 0px 2.1875rem;
+            margin-bottom: 0;
+        }
+    }
+}
 }

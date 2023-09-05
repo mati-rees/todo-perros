@@ -1,0 +1,24 @@
+.error{
+    background-image: url(../assets/img/retrato-mascota-adorable-aislado.jpg);
+    height: 43.75rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        margin-left: 40.625rem;
+        margin-bottom: 3.75rem;
+        h1{
+            font-family:'Roboto', sans-serif;
+            font-size: 3.75rem;
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8125rem;
+            width: 80%;
+        }
+    }
+}

@@ -13,7 +13,7 @@
         color: black;
         font-family: 'Roboto', sans-serif;
         &:hover{
-            color: white;
+            color: black;
         }
     }
     &:hover::before {
@@ -33,7 +33,7 @@
         width: 100%;
         height: inherit;
         border-radius: inherit;
-        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(252,176,69,1) 100%);
+        background: linear-gradient(90deg, #F9E58E 0%, rgba(252,176,69,1) 100%);
         transition: all 0.475s;
     }
 }
